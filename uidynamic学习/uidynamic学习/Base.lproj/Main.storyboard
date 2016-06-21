@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uidynamic学习" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyS-JO-LtC">
+                                <rect key="frame" x="213" y="92" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="4P3-je-Lo8"/>
+                                    <constraint firstAttribute="height" constant="30" id="Pnf-g8-Cal"/>
+                                </constraints>
+                                <state key="normal" title="重力行为"/>
+                                <connections>
+                                    <action selector="zhonglixingw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjc-4N-k5u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-e7-p9v">
+                                <rect key="frame" x="213" y="271" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ghr-9Q-zUN"/>
+                                    <constraint firstAttribute="width" constant="174" id="iXD-wj-QCO"/>
+                                </constraints>
+                                <state key="normal" title="吸附行为"/>
+                                <connections>
+                                    <action selector="xifu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYw-86-WP2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8p-VI-JU7">
+                                <rect key="frame" x="213" y="168" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZA2-aD-g98"/>
+                                    <constraint firstAttribute="width" constant="174" id="sSl-Rj-YXy"/>
+                                </constraints>
+                                <state key="normal" title="碰撞行为"/>
+                                <connections>
+                                    <action selector="pengzhuang:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYV-e8-QAh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cyS-JO-LtC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0LR-aw-eqa"/>
+                            <constraint firstItem="cyS-JO-LtC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="7s1-7a-Fxh"/>
+                            <constraint firstItem="O8p-VI-JU7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="Aaj-jo-BWE"/>
+                            <constraint firstItem="O8p-VI-JU7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RYB-he-utu"/>
+                            <constraint firstItem="IkV-e7-p9v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q7I-hd-XI0"/>
+                            <constraint firstItem="IkV-e7-p9v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="251" id="ywm-di-9lx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="316"/>
         </scene>
     </scenes>
 </document>

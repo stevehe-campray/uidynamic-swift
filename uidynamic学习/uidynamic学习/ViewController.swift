@@ -20,6 +20,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func xifu(sender: AnyObject) {
+        let xifuvc = xifuViewController()
+        self.presentViewController(xifuvc, animated: false, completion: nil)
+        
+    }
+    @IBAction func zhonglixingw(sender: AnyObject) {
+        
+        let zhonglivc  = zhongliViewController();
+        self.presentViewController(zhonglivc, animated: false, completion: nil);
+    }
 
+    @IBAction func pengzhuang(sender: AnyObject) {
+        let pengzhuangvc = pengzhuangViewController()
+        self.presentViewController(pengzhuangvc, animated: false, completion: nil)
+        
+        
+    }
 }
 
